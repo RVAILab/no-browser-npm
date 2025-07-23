@@ -1,0 +1,22 @@
+{
+  "name": "no-browser",
+  "description": "This is a marker package to indicate that a module cannot be used in browser/client environments.",
+  "keywords": [
+    "browser",
+    "client",
+    "server",
+    "node"
+  ],
+  "version": "0.0.1",
+  "homepage": "https://github.com/username/no-browser",
+  "bugs": "https://github.com/username/no-browser/issues",
+  "license": "MIT",
+  "files": ["index.js", "empty.js"],
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "browser": "./index.js",
+      "default": "./empty.js"
+    }
+  }
+}
